@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AYA | Ask Your Assignment</title>
+    <!-- !FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- !LOCAL STYLES -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+  </head>
+  <body>
+    <header class="flex" id="header">
+      <div class="logo_container">
+        <a href=".index.html"
+          ><img src="./img/logo.png" alt="AYA-LOGO" width="80px" height="80px"
+        /></a>
+      </div>
+    
+    </header>
+
+    <!-- !SIGN UP FORM -->
+    <div class="sign_up_outer_container">
+      <div class="sign_up_container">
+          <div class="form_header sign_in_header">Sign In</div>
+      <div class="sign_up_form_inner log_in_form_inner flex">
+        <div class="left_sign_up_form_container">
+        
+          <!-- INPUT FORM -->
+          <form action="./confirm_email.html" class="sign_up_form sign_in_form"method="post">
+            <div class="main_sign_up_input_container flex">
+              <div class="input_container sign_in_input_container flex">
+                <label for="sign_up_email">Email</label>
+                <input type="email" name="sign_in_email" required="true" id="sign_in_email"/>
+                <p class="error" id="sign_in_email_error">This is an error</p>
+            </div>
+            </div>
+            <div class="main_sign_up_input_container flex">
+            <div class="input_container sign_in_input_container flex">
+                <label for="sign_in_pass">Password</label>
+                <input type="password" name="sign_in_pass" required="true" id="sign_in_pass"/>
+                <p class="error" id="sign_in_pass_error">This is an error</p>
+            </div>
+            </div>
+            <div class="already_have_account_container forgot_pass_container flex">
+            <a href="./forgot_pass.html">Forgot Password?</a>
+        </div>
+            <!-- *USE THIS INPUT -->
+            <input type="submit"  class="btn sign_in_btn create_account_btn"value="Sign In" />
+        </form>
+
+          <div class="already_have_account_container dont_have_account_container forgot_pass_container flex">
+            <p>Don't have an account?</p>
+            <a href="./sign_up.html">Get Started</a>
+          </div>
+        </div>
+        <!-- *RIGHT SIDE IMAGE -->
+        <div class="right_sign_up_form_container right_sign_in_form_container">
+          <img src="./img/sign_in_side_img.png" alt="sign_up_img" />
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- !SCRIPTS -->
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

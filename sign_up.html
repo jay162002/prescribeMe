@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AYA | Ask Your Assignment</title>
+    <!-- !FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- !LOCAL STYLES -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+  </head>
+  <body>
+    <header class="flex" id="header">
+      <div class="logo_container">
+        <a href=".index.html"
+          ><img src="./img/logo.png" alt="AYA-LOGO" width="80px" height="80px"
+        /></a>
+      </div>
+      <!-- LINKS CONTAINER -->
+      <!-- <nav class="link_container flex">
+        <ul class="nav_link_container flex">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <ul class="login_link_container flex">
+          <li id="sign_in_btn">
+            <a href="#"
+              ><i class="fa-solid fa-user" style="color: #000000"></i>Sign In</a
+            >
+          </li>
+          <li>
+            <a href="#" id="register_btn" class="btn"
+              ><i class="fa-solid fa-user-pen" style="color: #fff"></i
+              >Register</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="burger_container">
+        <i></i>
+        <i></i>
+        <i></i>
+      </div> -->
+    </header>
+
+    <!-- !SIGN UP FORM -->
+    <div class="sign_up_outer_container">
+      <div class="sign_up_container">
+      <div class="sign_up_form_inner flex">
+        <div class="left_sign_up_form_container">
+          <div class="form_header">Sign Up</div>
+          <!-- INPUT FORM -->
+          <form action="./confirm_email.html" class="sign_up_form"method="post">
+            <div class="main_sign_up_input_container flex">
+              <div class="input_container flex">
+                <label for="sign_up_name">Name</label>
+                <input type="text" name="sign_up_name" required="true" id="sign_up_name"/>
+                <p class="error" id="sign_up_name_error">This is an error</p>
+              </div>
+              <div class="input_container flex">
+                <label for="sign_up_email">Email</label>
+                <input type="email" name="sign_up_email" required="true" id="sign_up_email"/>
+                <p class="error" style="opacity: 0;" id="sign_up_email_error">This is an error</p>
+              </div>
+            </div>
+            <div class="main_sign_up_input_container flex">
+              <div class="input_container flex">
+                <label for="sign_up_pass">Password</label>
+                <input type="password" name="sign_up_pass" required="true" id="sign_up_pass"/>
+                <p class="error" style="opacity: 0;" id="sign_up_pass_error">This is an error</p>
+              </div>
+              <div class="input_container flex">
+                <label for="sign_up_confirm_pass">Confirm Password</label>
+                <input type="password" name="sign_up_confirm_pass" id="sign_up_confirm_pass" required="true" />
+                <p class="error" style="opacity: 0;" id="sign_up_confirm_pass_error">This is an error</p>
+              </div>
+            </div>
+            <input type="submit"  class="btn create_account_btn"value="Create Account" />
+          </form>
+          <div class="already_have_account_container flex">
+            <p>Already have an account?</p>
+            <a href="./">Sign In</a>
+          </div>
+        </div>
+        <!-- *RIGHT SIDE IMAGE -->
+        <div class="right_sign_up_form_container">
+          <img src="./img/nurse.png" alt="sign_up_img" />
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- !SCRIPTS -->
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
